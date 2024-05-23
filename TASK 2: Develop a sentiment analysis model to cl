@@ -1,23 +1,57 @@
 {
  "cells": [
   {
+   "cell_type": "markdown",
+   "id": "4604c9c8",
+   "metadata": {
+    "papermill": {
+     "duration": 0.004186,
+     "end_time": "2024-05-23T14:43:01.851572",
+     "exception": false,
+     "start_time": "2024-05-23T14:43:01.847386",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "# TASK 2: Analysis on movie reviews"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "28d4055f",
+   "metadata": {
+    "papermill": {
+     "duration": 0.003533,
+     "end_time": "2024-05-23T14:43:01.859225",
+     "exception": false,
+     "start_time": "2024-05-23T14:43:01.855692",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "## Step 1: Import Necessary Libraries"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "953f1248",
+   "id": "ffc0bef8",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2024-05-23T14:36:45.303502Z",
-     "iopub.status.busy": "2024-05-23T14:36:45.302625Z",
-     "iopub.status.idle": "2024-05-23T14:36:48.426161Z",
-     "shell.execute_reply": "2024-05-23T14:36:48.425133Z"
+     "iopub.execute_input": "2024-05-23T14:43:01.869441Z",
+     "iopub.status.busy": "2024-05-23T14:43:01.868301Z",
+     "iopub.status.idle": "2024-05-23T14:43:05.212677Z",
+     "shell.execute_reply": "2024-05-23T14:43:05.210581Z"
     },
     "papermill": {
-     "duration": 3.132764,
-     "end_time": "2024-05-23T14:36:48.428307",
+     "duration": 3.352315,
+     "end_time": "2024-05-23T14:43:05.215359",
      "exception": false,
-     "start_time": "2024-05-23T14:36:45.295543",
+     "start_time": "2024-05-23T14:43:01.863044",
      "status": "completed"
     },
     "tags": []
@@ -56,21 +90,38 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "id": "289c3e30",
+   "metadata": {
+    "papermill": {
+     "duration": 0.003882,
+     "end_time": "2024-05-23T14:43:05.223782",
+     "exception": false,
+     "start_time": "2024-05-23T14:43:05.219900",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "## Step 2: Load the data"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "b744cab5",
+   "id": "7e64e51a",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-23T14:36:48.437531Z",
-     "iopub.status.busy": "2024-05-23T14:36:48.437012Z",
-     "iopub.status.idle": "2024-05-23T14:37:04.235594Z",
-     "shell.execute_reply": "2024-05-23T14:37:04.234570Z"
+     "iopub.execute_input": "2024-05-23T14:43:05.235627Z",
+     "iopub.status.busy": "2024-05-23T14:43:05.234881Z",
+     "iopub.status.idle": "2024-05-23T14:43:16.810266Z",
+     "shell.execute_reply": "2024-05-23T14:43:16.809054Z"
     },
     "papermill": {
-     "duration": 15.806098,
-     "end_time": "2024-05-23T14:37:04.238372",
+     "duration": 11.584147,
+     "end_time": "2024-05-23T14:43:16.812775",
      "exception": false,
-     "start_time": "2024-05-23T14:36:48.432274",
+     "start_time": "2024-05-23T14:43:05.228628",
      "status": "completed"
     },
     "tags": []
@@ -102,21 +153,38 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "id": "89d14616",
+   "metadata": {
+    "papermill": {
+     "duration": 0.003901,
+     "end_time": "2024-05-23T14:43:16.820899",
+     "exception": false,
+     "start_time": "2024-05-23T14:43:16.816998",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "## Step 3: Split the Data"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "60e0dfc1",
+   "id": "c54d9ea1",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-23T14:37:04.247836Z",
-     "iopub.status.busy": "2024-05-23T14:37:04.247418Z",
-     "iopub.status.idle": "2024-05-23T14:37:04.265634Z",
-     "shell.execute_reply": "2024-05-23T14:37:04.264280Z"
+     "iopub.execute_input": "2024-05-23T14:43:16.831128Z",
+     "iopub.status.busy": "2024-05-23T14:43:16.830679Z",
+     "iopub.status.idle": "2024-05-23T14:43:16.848255Z",
+     "shell.execute_reply": "2024-05-23T14:43:16.846940Z"
     },
     "papermill": {
-     "duration": 0.026263,
-     "end_time": "2024-05-23T14:37:04.268518",
+     "duration": 0.026209,
+     "end_time": "2024-05-23T14:43:16.851228",
      "exception": false,
-     "start_time": "2024-05-23T14:37:04.242255",
+     "start_time": "2024-05-23T14:43:16.825019",
      "status": "completed"
     },
     "tags": []
@@ -130,21 +198,38 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "id": "e4c17085",
+   "metadata": {
+    "papermill": {
+     "duration": 0.003894,
+     "end_time": "2024-05-23T14:43:16.859317",
+     "exception": false,
+     "start_time": "2024-05-23T14:43:16.855423",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "## Step 4: Transform Text Data to TF-IDF Features"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "3417e596",
+   "id": "88965633",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-23T14:37:04.278042Z",
-     "iopub.status.busy": "2024-05-23T14:37:04.277598Z",
-     "iopub.status.idle": "2024-05-23T14:37:13.287989Z",
-     "shell.execute_reply": "2024-05-23T14:37:13.286492Z"
+     "iopub.execute_input": "2024-05-23T14:43:16.869159Z",
+     "iopub.status.busy": "2024-05-23T14:43:16.868691Z",
+     "iopub.status.idle": "2024-05-23T14:43:23.517497Z",
+     "shell.execute_reply": "2024-05-23T14:43:23.516298Z"
     },
     "papermill": {
-     "duration": 9.018191,
-     "end_time": "2024-05-23T14:37:13.290703",
+     "duration": 6.656704,
+     "end_time": "2024-05-23T14:43:23.520124",
      "exception": false,
-     "start_time": "2024-05-23T14:37:04.272512",
+     "start_time": "2024-05-23T14:43:16.863420",
      "status": "completed"
     },
     "tags": []
@@ -157,21 +242,38 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "id": "0418468b",
+   "metadata": {
+    "papermill": {
+     "duration": 0.003778,
+     "end_time": "2024-05-23T14:43:23.528108",
+     "exception": false,
+     "start_time": "2024-05-23T14:43:23.524330",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "## Step 5: Train a Logistic Regression Model"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "31eb3a32",
+   "id": "da902168",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-23T14:37:13.300234Z",
-     "iopub.status.busy": "2024-05-23T14:37:13.299505Z",
-     "iopub.status.idle": "2024-05-23T14:37:14.692730Z",
-     "shell.execute_reply": "2024-05-23T14:37:14.691727Z"
+     "iopub.execute_input": "2024-05-23T14:43:23.538432Z",
+     "iopub.status.busy": "2024-05-23T14:43:23.537620Z",
+     "iopub.status.idle": "2024-05-23T14:43:24.924311Z",
+     "shell.execute_reply": "2024-05-23T14:43:24.923031Z"
     },
     "papermill": {
-     "duration": 1.400472,
-     "end_time": "2024-05-23T14:37:14.695137",
+     "duration": 1.394748,
+     "end_time": "2024-05-23T14:43:24.927023",
      "exception": false,
-     "start_time": "2024-05-23T14:37:13.294665",
+     "start_time": "2024-05-23T14:43:23.532275",
      "status": "completed"
     },
     "tags": []
@@ -197,21 +299,38 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "id": "896b0cd9",
+   "metadata": {
+    "papermill": {
+     "duration": 0.004853,
+     "end_time": "2024-05-23T14:43:24.936601",
+     "exception": false,
+     "start_time": "2024-05-23T14:43:24.931748",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "## Step 6: Evaluate the Model"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": 6,
-   "id": "9a593e8e",
+   "id": "18defdf1",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-23T14:37:14.705280Z",
-     "iopub.status.busy": "2024-05-23T14:37:14.704487Z",
-     "iopub.status.idle": "2024-05-23T14:37:14.744963Z",
-     "shell.execute_reply": "2024-05-23T14:37:14.743768Z"
+     "iopub.execute_input": "2024-05-23T14:43:24.947447Z",
+     "iopub.status.busy": "2024-05-23T14:43:24.947044Z",
+     "iopub.status.idle": "2024-05-23T14:43:24.985512Z",
+     "shell.execute_reply": "2024-05-23T14:43:24.984290Z"
     },
     "papermill": {
-     "duration": 0.048171,
-     "end_time": "2024-05-23T14:37:14.747408",
+     "duration": 0.046895,
+     "end_time": "2024-05-23T14:43:24.988148",
      "exception": false,
-     "start_time": "2024-05-23T14:37:14.699237",
+     "start_time": "2024-05-23T14:43:24.941253",
      "status": "completed"
     },
     "tags": []
@@ -258,21 +377,38 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "id": "faa4f87c",
+   "metadata": {
+    "papermill": {
+     "duration": 0.00487,
+     "end_time": "2024-05-23T14:43:24.997596",
+     "exception": false,
+     "start_time": "2024-05-23T14:43:24.992726",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "## Step 7 : Plot the confusion matrix"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": 7,
-   "id": "038498b7",
+   "id": "cc22e4e7",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2024-05-23T14:37:14.757948Z",
-     "iopub.status.busy": "2024-05-23T14:37:14.757063Z",
-     "iopub.status.idle": "2024-05-23T14:37:15.374417Z",
-     "shell.execute_reply": "2024-05-23T14:37:15.373213Z"
+     "iopub.execute_input": "2024-05-23T14:43:25.008833Z",
+     "iopub.status.busy": "2024-05-23T14:43:25.008023Z",
+     "iopub.status.idle": "2024-05-23T14:43:25.638592Z",
+     "shell.execute_reply": "2024-05-23T14:43:25.637370Z"
     },
     "papermill": {
-     "duration": 0.625357,
-     "end_time": "2024-05-23T14:37:15.376909",
+     "duration": 0.639091,
+     "end_time": "2024-05-23T14:43:25.641312",
      "exception": false,
-     "start_time": "2024-05-23T14:37:14.751552",
+     "start_time": "2024-05-23T14:43:25.002221",
      "status": "completed"
     },
     "tags": []
@@ -337,14 +473,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 33.865687,
-   "end_time": "2024-05-23T14:37:16.105211",
+   "duration": 27.565176,
+   "end_time": "2024-05-23T14:43:26.369752",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2024-05-23T14:36:42.239524",
+   "start_time": "2024-05-23T14:42:58.804576",
    "version": "2.5.0"
   }
  },
